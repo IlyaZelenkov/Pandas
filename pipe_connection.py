@@ -74,7 +74,7 @@ def source_to_sinks(path: str) -> str:
         # This is done for formatiing reasons
         visited.append([row, col])
         
-        # Recursive conditions: each if branch represents a move upward, downward, leftward, rightward. 
+        # Recursive conditions: each "if" statement branch represents a move upward, downward, leftward, rightward. 
         # The conditions are that each cell's directionality vector index has to correspond to its counterparts inverse index.
         # e.g: Since each element is given a directionality pathway represented by a length 4 array: [left, right, up, down]
         #      If the cell wants to move upwards; which means that it has a 1 on index 2 which is the upward index: ([0, 0, 1, 0])
@@ -119,7 +119,6 @@ def source_to_sinks(path: str) -> str:
     
 if __name__ == "__main__":
 
-    
 
-    print(source_to_sinks("coding_qual_input.txt"))
+    print(source_to_sinks("db_pipe.txt"))
 
